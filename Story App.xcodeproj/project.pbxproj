@@ -13,6 +13,7 @@
 		502294901CB2DF3900B9E1B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5022948F1CB2DF3900B9E1B5 /* Assets.xcassets */; };
 		502294931CB2DF3900B9E1B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502294911CB2DF3900B9E1B5 /* LaunchScreen.storyboard */; };
 		502294E01CB2F23400B9E1B5 /* interactiveStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502294DF1CB2F23400B9E1B5 /* interactiveStory.swift */; };
+		502294E21CB3079700B9E1B5 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502294E11CB3079700B9E1B5 /* PageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		502294921CB2DF3900B9E1B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		502294941CB2DF3900B9E1B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		502294DF1CB2F23400B9E1B5 /* interactiveStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = interactiveStory.swift; sourceTree = "<group>"; };
+		502294E11CB3079700B9E1B5 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				502294911CB2DF3900B9E1B5 /* LaunchScreen.storyboard */,
 				502294941CB2DF3900B9E1B5 /* Info.plist */,
 				502294DF1CB2F23400B9E1B5 /* interactiveStory.swift */,
+				502294E11CB3079700B9E1B5 /* PageController.swift */,
 			);
 			path = "Story App";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502294E21CB3079700B9E1B5 /* PageController.swift in Sources */,
 				5022948B1CB2DF3900B9E1B5 /* ViewController.swift in Sources */,
 				502294E01CB2F23400B9E1B5 /* interactiveStory.swift in Sources */,
 				502294891CB2DF3900B9E1B5 /* AppDelegate.swift in Sources */,

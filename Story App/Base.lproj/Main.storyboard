@@ -17,24 +17,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beginning" translatesAutoresizingMaskIntoConstraints="NO" id="3ss-wi-r0P">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZo-pq-v0C">
                                 <rect key="frame" x="246" y="522" width="108" height="30"/>
                                 <state key="normal" title="Start Adventure"/>
                                 <connections>
-                                    <segue destination="MiH-Ca-qq8" kind="show" id="o0N-HM-YvT"/>
+                                    <segue destination="MiH-Ca-qq8" kind="show" identifier="startAdventure" id="o0N-HM-YvT"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rQM-ZP-KUl">
+                                <rect key="frame" x="44" y="0.0" width="512" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sr-TN-YXh">
+                                <rect key="frame" x="44" y="452" width="513" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Apz-ad-ug3"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beginning" translatesAutoresizingMaskIntoConstraints="NO" id="3ss-wi-r0P">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="4sr-TN-YXh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="1jw-ET-I5y"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eZo-pq-v0C" secondAttribute="bottom" constant="48" id="1ro-y5-0bG"/>
+                            <constraint firstItem="4sr-TN-YXh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EjV-Qo-tSQ"/>
                             <constraint firstItem="3ss-wi-r0P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GWd-qD-hGs"/>
+                            <constraint firstItem="eZo-pq-v0C" firstAttribute="top" secondItem="4sr-TN-YXh" secondAttribute="bottom" constant="40" id="Mhi-mr-Br5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3ss-wi-r0P" secondAttribute="bottom" id="OBn-zb-3Z2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rQM-ZP-KUl" secondAttribute="trailing" constant="24" id="XdS-QX-It3"/>
                             <constraint firstAttribute="trailing" secondItem="3ss-wi-r0P" secondAttribute="trailing" id="a35-52-eMw"/>
                             <constraint firstItem="eZo-pq-v0C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gnw-kh-hf7"/>
+                            <constraint firstItem="rQM-ZP-KUl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="iPW-cn-pYg"/>
                             <constraint firstItem="3ss-wi-r0P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jIv-kr-MAR"/>
                         </constraints>
                     </view>
@@ -44,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="1202" y="1050"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Controller-->
         <scene sceneID="dKd-oF-nyy">
             <objects>
-                <viewController id="MiH-Ca-qq8" sceneMemberID="viewController">
+                <viewController id="MiH-Ca-qq8" customClass="PageController" customModule="Story_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Af-dp-Pjk"/>
                         <viewControllerLayoutGuide type="bottom" id="CRU-2Y-Y7P"/>
